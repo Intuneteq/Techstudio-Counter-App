@@ -13,6 +13,10 @@ function App() {
     setCount(count + 1);
   }
 
+  const handleReset = () => {
+    setCount(0)
+  }
+
   
   return (
     <div>
@@ -22,6 +26,7 @@ function App() {
       <button onClick={handleMinus}>minus</button>
       <p>Counter: {count}</p>
       <button onClick={handleAdd}>Add</button>
+      <button onClick={handleReset}>Reset</button>
     </div>
     </div>
   );
